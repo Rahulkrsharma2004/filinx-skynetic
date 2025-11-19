@@ -16,7 +16,7 @@ export default function Hero() {
   ]
 
   return (
-    <section className="w-full py-20 bg-white border-b border-gray-200">
+    <section className="w-full py-10 bg-white border-b border-gray-200">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left Content */}
