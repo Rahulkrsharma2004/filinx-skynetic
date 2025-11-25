@@ -1,134 +1,159 @@
-'use client'
-
 export default function Footer() {
-  const footerLinks = {
-    product: {
-      title: 'Product',
-      links: [
-        { name: 'Company Registration', href: '#' },
-        { name: 'GST Registration', href: '#' },
-        { name: 'Compliance Autopilot', href: '#' },
-        { name: 'Document Vault', href: '#' },
-      ],
-    },
-    licenses: {
-      title: 'Licenses',
-      links: [
-        { name: 'Private Limited', href: '#' },
-        { name: 'LLP', href: '#' },
-        { name: 'OPC', href: '#' },
-        { name: 'Trade License', href: '#' },
-      ],
-    },
-    resources: {
-      title: 'Resources',
-      links: [
-        { name: 'Blog', href: '#' },
-        { name: 'Guides', href: '#' },
-        { name: 'Help Center', href: '#' },
-        { name: 'API Docs', href: '#' },
-      ],
-    },
-    company: {
-      title: 'Company',
-      links: [
-        { name: 'About Us', href: '#' },
-        { name: 'Careers', href: '#' },
-        { name: 'Contact', href: '#' },
-        { name: 'Partner Program', href: '#' },
-      ],
-    },
-  }
-
   return (
-    <footer className="w-full bg-white border-t border-gray-200">
-      <div className="mx-auto max-w-7xl px-6 py-12">
-        <div className="grid md:grid-cols-5 gap-8 mb-12">
-          {/* Left - Branding */}
-          <div className="md:col-span-1">
-            <div className="flex items-center gap-2 mb-3">
-              <div className="w-5 h-5 bg-blue-600 rounded-sm flex items-center justify-center">
-                <span className="text-white text-xs font-bold">F</span>
-              </div>
-              <span className="font-bold text-gray-900">FILINX</span>
-            </div>
-            <p className="text-gray-600 text-sm mb-4">Fast, transparent company registration for Indian startups.</p>
-            <div className="flex gap-4 text-sm">
-              <span className="text-gray-900 font-medium">4.8★</span>
-              <span className="text-gray-600">2000+ companies</span>
-            </div>
-          </div>
-
-          {/* Product Links */}
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-4">{footerLinks.product.title}</h4>
-            <ul className="space-y-3">
-              {footerLinks.product.links.map((link) => (
-                <li key={link.name}>
-                  <a href={link.href} className="text-gray-600 hover:text-blue-600 transition text-sm">
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Licenses Links */}
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-4">{footerLinks.licenses.title}</h4>
-            <ul className="space-y-3">
-              {footerLinks.licenses.links.map((link) => (
-                <li key={link.name}>
-                  <a href={link.href} className="text-gray-600 hover:text-blue-600 transition text-sm">
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Resources Links */}
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-4">{footerLinks.resources.title}</h4>
-            <ul className="space-y-3">
-              {footerLinks.resources.links.map((link) => (
-                <li key={link.name}>
-                  <a href={link.href} className="text-gray-600 hover:text-blue-600 transition text-sm">
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Company Links */}
-          <div>
-            <h4 className="font-semibold text-gray-900 mb-4">{footerLinks.company.title}</h4>
-            <ul className="space-y-3">
-              {footerLinks.company.links.map((link) => (
-                <li key={link.name}>
-                  <a href={link.href} className="text-gray-600 hover:text-blue-600 transition text-sm">
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
+    <footer>
+      {/* CTA Section */}
+      <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-4 py-16 sm:py-20">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Ready to incorporate?</h2>
+          <p className="text-white text-lg mb-8 opacity-95">
+            Start your guided setup in minutes. No credit card required.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <button className="bg-white text-blue-600 font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition">
+              Start Setup
+            </button>
+            <button className="border-2 border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:bg-opacity-10 transition">
+              Schedule a free consult
+            </button>
           </div>
         </div>
+      </div>
 
-        {/* Bottom divider and legal links */}
-        <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row items-center justify-between">
-          <p className="text-gray-600 text-sm">© 2025 Filinx Technologies Pvt Ltd. All rights reserved.</p>
-          <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition text-sm">
-              Privacy
-            </a>
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition text-sm">
-              Terms
-            </a>
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition text-sm">
-              Security
-            </a>
+      {/* Footer Links Section */}
+      <div className="bg-gray-900 text-gray-300 px-4 py-16">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 mb-12">
+            <div className="md:col-span-1">
+              <p className="text-sm text-gray-400 leading-relaxed">
+                Fast, transparent company registration with guided workflows and live tracking
+              </p>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-white mb-4">Company</h4>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Careers
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Press Kit
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-white mb-4">Services</h4>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Registration
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Licences
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Compliance
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    International
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-white mb-4">Resources</h4>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Guides
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Templates
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Glossary
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-white mb-4">Support</h4>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Help Center
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Chat with us
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Book a call
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Status
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Footer Bottom */}
+          <div className="border-t border-gray-800 pt-8">
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+              <p>© 2025 Filinx Fintech LLP. All rights reserved.</p>
+              <p>
+                Filinx is not a law firm and does not provide legal advice. Services include filing assistance and
+                document management.
+              </p>
+              <div className="flex gap-6">
+                <a href="#" className="hover:text-white transition">
+                  Privacy Policy
+                </a>
+                <a href="#" className="hover:text-white transition">
+                  Terms of Service
+                </a>
+                <a href="#" className="hover:text-white transition">
+                  Cookie Policy
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,58 +1,37 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Moon } from "lucide-react";
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-          <div className="w-5 h-5 bg-blue-600 rounded-sm flex items-center justify-center">
-            <span className="text-white text-xs font-bold">F</span>
+    <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+        <div className="flex items-center gap-8">
+          <div className="flex items-center gap-1">
+            <span className="text-blue-600 font-bold text-lg">◆</span>
+            <span className="font-bold text-lg">FILINX</span>
           </div>
-          <span className="text-gray-900">FILINX</span>
-        </Link>
-
-        {/* Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
-          {[
-            "How it Works",
-            "Pricing",
-            "Licenses",
-            "Why Filinx",
-            "Resources",
-          ].map((item) => (
-            <Link
-              key={item}
-              href="#"
-              className="text-gray-600 hover:text-gray-900 transition text-sm font-medium"
-            >
-              {item}
+          <nav className="hidden md:flex items-center gap-6 text-sm text-gray-600">
+            <Link href="#services" className="hover:text-gray-900">
+              Services
             </Link>
-          ))}
-        </nav>
-
-        {/* Right Section */}
-        <div className="flex items-center gap-3 sm:gap-4">
-          <button className="hover:bg-gray-100 rounded-lg transition">
-            <Moon className="w-5 h-5 text-gray-600" />
-          </button>
-          <Link
-            href="#"
-            className="text-gray-900 font-medium text-sm hover:text-blue-600 transition"
-          >
-            <span className="block md:hidden">Call Us</span>
-            <span className="hidden md:block">Talk to an Expert</span>
-          </Link>
-
-          <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6">
-            Start Setup →
-          </Button>
+            <Link href="#pricing" className="hover:text-gray-900">
+              Pricing
+            </Link>
+            <Link href="#resources" className="hover:text-gray-900">
+              Resources
+            </Link>
+            <Link href="#support" className="hover:text-gray-900">
+              Support
+            </Link>
+          </nav>
+        </div>
+        <div className="flex items-center gap-3">
+          <button className="text-sm text-gray-600 hover:text-gray-900">Talk to Expert</button>
+          <Button className="bg-blue-600 hover:bg-blue-700 text-white">Start Setup</Button>
         </div>
       </div>
     </header>
-  );
+  )
 }

@@ -1,43 +1,35 @@
-import Header from '@/components/header'
-import Hero from '@/components/sections/hero'
-import WhyFilinx from '@/components/sections/why-filinx'
-import HowItWorks from '@/components/sections/how-it-works'
-import AIRecommendation from '@/components/sections/ai-recommendation'
-import Pricing from '@/components/sections/pricing'
-import AddOns from '@/components/sections/add-ons'
-import Features from '@/components/sections/features'
-import Support from '@/components/sections/support'
-import FAQ from '@/components/sections/faq'
-import Footer from '@/components/footer'
+import Header from "@/components/header"
+import HeroSection from "@/components/hero-section"
+import HowItWorks from "@/components/how-it-works"
+import WhyFounders from "@/components/why-founders"
+import SeeInAction from "@/components/see-in-action"
+import WhatsAppFlow from "@/components/whatsapp-flow"
+import AIAssisted from "@/components/ai-assisted"
+import ReviewExpert from "@/components/review-expert"
+import ServiceCatalogue from "@/components/service-catalogue"
+import PricingSection from "@/components/pricing-section"
+import FAQSection from "@/components/faq-section"
+import Footer from "@/components/footer"
 
 export const metadata = {
-  title: 'Filinx - Company Registration Made Simple',
-  description: 'Stay compliant without babysitting it. Fast, transparent, and hassle-free company registration.',
+  title: "Filinx - Register Your Company Fast. Transparent. Done.",
+  description: "Expert CA/CS guided business setup powered by AI + in-house experts",
 }
 
 export default function Home() {
   return (
-    <main className="w-full">
+    <main className="w-full bg-white">
       <Header />
-      {/* 1. Hero section - Register your company in 5–7 days */}
-      <Hero />
-      {/* 2. Why Founders choose Us */}
-      <WhyFilinx />
-      {/* 3. How it works */}
+      <HeroSection />
       <HowItWorks />
-      {/* 4. Get the right recommendation, instantly */}
-      <AIRecommendation />
-      {/* 5. Simple, transparent Pricing */}
-      <Pricing />
-      {/* 6. Optional Add-ons */}
-      <AddOns />
-      {/* 7. Stay Compliant */}
-      {/* <Features /> */}
-      {/* 8. Human Support, AI assistance — right where you are */}
-      <Support />
-      {/* 9. Frequently asked questions */}
-      <FAQ />
-      {/* 10. Footer */}
+      <WhyFounders />
+      <SeeInAction />
+      <WhatsAppFlow />
+      <AIAssisted />
+      <ReviewExpert />
+      <ServiceCatalogue />
+      <PricingSection />
+      <FAQSection />
       <Footer />
     </main>
   )
