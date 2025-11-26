@@ -12,9 +12,10 @@ import FAQSection from "@/components/faq-section"
 import Footer from "@/components/footer"
 
 export const metadata = {
-  title: "Filinx - Register Your Company Fast. Transparent. Done.",
-  description: "Expert CA/CS guided business setup powered by AI + in-house experts",
-}
+  title: "FILINX™ - Register you company fast and easy",
+  description: "Register you company fast and easy",
+};
+
 
 export default function Home() {
   return (
