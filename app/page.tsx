@@ -12,7 +12,7 @@ import FAQSection from "@/components/faq-section"
 import Footer from "@/components/footer"
 
 export const metadata = {
-  title: "FILINX™ - Register you company fast and easy",
+  title: "FILINX - Register you company fast and easy",
   description: "Register you company fast and easy",
 };
 
